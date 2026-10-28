@@ -1,0 +1,169 @@
+.status-container {
+  padding: 20px;
+}
+
+.status-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #d1d5db;
+}
+
+.status-card.approved {
+  border-left-color: #10b981;
+}
+
+.status-card.flagged {
+  border-left-color: #f59e0b;
+}
+
+.status-card.blocked {
+  border-left-color: #ef4444;
+}
+
+.status-card.processing {
+  border-left-color: #3b82f6;
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.status-header h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 22px;
+}
+
+.status-icon {
+  flex-shrink: 0;
+}
+
+.status-icon.approved {
+  color: #10b981;
+}
+
+.status-icon.flagged {
+  color: #f59e0b;
+}
+
+.status-icon.blocked {
+  color: #ef4444;
+}
+
+.status-icon.processing {
+  color: #3b82f6;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.status-details {
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: 600;
+  color: #6b7280;
+  min-width: 120px;
+}
+
+.txid {
+  font-family: monospace;
+  background: #f3f4f6;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #374151;
+  word-break: break-all;
+}
+
+.score {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.reasons {
+  color: #374151;
+  text-transform: capitalize;
+}
+
+.explanation {
+  color: #374151;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.processing-info {
+  background: #f0f9ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.processing-info p {
+  margin: 0 0 12px 0;
+  color: #1e40af;
+  font-size: 14px;
+}
+
+.toggle-refresh {
+  padding: 8px 16px;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.toggle-refresh:hover {
+  background: #1e3a8a;
+}
+
+.verify-otp-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #f59e0b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.verify-otp-btn:hover {
+  background: #d97706;
+}
